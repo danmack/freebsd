@@ -17,4 +17,5 @@ Please include that output and any error messages when posting questions.
 Introduction to manual pages:  man man
 FreeBSD directory layout:      man hier
 
-Edit /etc/motd.template to change this login announcement.
+To change this login announcement, edit /etc/motd.template and either
+reboot or restart the motd service in /etc/rc.d/motd.

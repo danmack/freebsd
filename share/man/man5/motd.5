@@ -22,6 +22,14 @@ prepended to
 and the contents are written to
 .Pa /var/run/motd .
 .Pp
+.Pa /var/run/motd 
+can be updated without a system reboot by manually restarting the
+motd service after updating
+.Pa /etc/motd.template:
+.Bd -literal -offset -ident
+service motd restart
+.Ed
+.Pp
 Individual users may suppress the display of this file by
 creating a file named
 .Dq Pa .hushlogin
